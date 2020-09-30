@@ -14,7 +14,7 @@ try:
     data_median = pd.read_csv('data/data_median.csv')
 
     # load the model
-    clf = load('data/opole_weather_prediction.joblib')
+    clf = load('data/trained_model.joblib')
 
 except FileNotFoundError:
     import data_preprocessing
@@ -24,7 +24,7 @@ except FileNotFoundError:
     data_median = pd.read_csv('data/data_median.csv')
 
     # load the model
-    clf = load('data/opole_weather_prediction.joblib')
+    clf = load('data/trained_model.joblib')
 
 
 # Making a function for prediction. Here we also use Python's 'datetime.datetime.strptime()' and
