@@ -127,7 +127,7 @@ ideal_model.fit(X_train, y_train)
 show_scores(ideal_model)
 
 # Save the ideal_model to a joblib file to use it later.
-dump(ideal_model, 'data/opole_weather_prediction.joblib')
+dump(ideal_model, 'data/trained_model.joblib')
 
 ##-------------------------------------------------------------------------------------------------------
 # Make the input data ready for our model.
