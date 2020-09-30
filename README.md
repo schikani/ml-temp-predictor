@@ -9,7 +9,6 @@ ml-temp-predictor is GUI and terminal app for predicting temperature on a specif
 * `$ source ./venv/bin/activate`
 * `$ git clone https://github.com/schikani/ml-temp-predictor.git`
 * `$ cd ml-temp-predictor`
-* `$ unzip data.zip`
 * `$ pip install -r requirements.txt`
 
 ### Currently this project is tested in Ubuntu 20.04 but hopefully it should work in Mac and Windows sytems too.
@@ -18,7 +17,19 @@ ml-temp-predictor is GUI and terminal app for predicting temperature on a specif
 #### This is the GUI version of ml-temp-predictor
 **Note:** If you have problems opening this GUI version, try 2. Terminal app shown in the next section
 
+### **If your location is not "Opole, Poland":**
+* #### 1. Make sure you have history data downloaded for your location from https://home.openweathermap.org/history_bulks/new in CSV format.
+* #### 2. Add the downloaded file in the data directory and remove the file `opole-weather-data.csv`
+* #### 3. Run `$ python temp_prediction_gui.py`
+
+### **If your location is "Opole, Poland":**
+* #### 1. Run `$ python temp_prediction_gui.py`
+
+#### If everything works fine, you should see a similar result like shown below.
 ![alt text](https://github.com/schikani/ml-temp-predictor/blob/master/temp_prediction_gui_screenshot.png)
 
 ### 2. Terminal app
+#### This is the terminal version of Easyetc-News
+* #### Run `$ python temp_prediction_terminal.py`
+#### If everything works fine, you should see a similar result like shown below.
 ![alt text](https://github.com/schikani/ml-temp-predictor/blob/master/temp_prediction_terminal_screenshot.png)
