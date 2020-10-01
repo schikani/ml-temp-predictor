@@ -48,14 +48,6 @@ def make_prediction(model, month, day):
         print(f"Median predicted temperature: {str(round(median_p, 2))}°C")
         print("~"*40)
 
-        # print(f"Predictions for {prediction_day.strftime('%B %d')} are:")
-        # print("Mean input predictions:")
-        # print("Temperature:" + str(round(mean_p, 2)) + '°C')
-        # print(f"Minimum temperature: {mean_temp_min}")
-        # print(f"Maximum temperature: {mean_temp_max}")
-        #
-        # print("Median input predictions: " + str(round(median_p, 2)) + '°C')
-        # print("")
 
     except ValueError:
         print("The combination of month and date is incorrect! Please type a correct month-day combination")
