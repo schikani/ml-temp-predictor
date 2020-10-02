@@ -16,6 +16,8 @@ try:
     # load the model
     clf = load('data/trained_model.joblib')
 
+# Here with an exception of FileNotFoundError we: 
+# import data_preprocessing to get the trained model after going throungh data manipulation in data_preprocessing.py.
 except FileNotFoundError:
     import data_preprocessing
 
