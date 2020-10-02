@@ -21,6 +21,7 @@ ml-temp-predictor is GUI and terminal app for predicting temperature on a specif
 * #### 1. Make sure you have history data downloaded for your location from https://home.openweathermap.org/history_bulks/new in CSV format.
 * #### 2. Add the downloaded file in the data directory and remove the file `opole-weather-data.csv`
 * #### 3. Run `$ python temp_prediction_gui.py`
+##### The first time when you load this script, it will call the `data_preprocessing.py` and it can take some time depending on your compute power because this script does all the tasks until we have a trained model to use it later. The second time you run `$ python temp_prediction_gui.py` or `$ python temp_prediction_terminal.py`, it will take very less time to load as we will already have our trained model saved
 
 ### **If your location is "Opole, Poland":**
 * #### 1. Run `$ python temp_prediction_gui.py`
